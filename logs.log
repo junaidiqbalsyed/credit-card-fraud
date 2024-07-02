@@ -1,0 +1,1012 @@
+2024-07-02 05:37:59,397:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 05:37:59,398:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 05:37:59,398:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 05:37:59,398:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 05:46:33,023:INFO:PyCaret ClassificationExperiment
+2024-07-02 05:46:33,023:INFO:Logging name: clf-default-name
+2024-07-02 05:46:33,023:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-07-02 05:46:33,023:INFO:version 3.3.2
+2024-07-02 05:46:33,024:INFO:Initializing setup()
+2024-07-02 05:46:33,024:INFO:self.USI: d7d9
+2024-07-02 05:46:33,025:INFO:self._variable_keys: {'pipeline', 'html_param', 'logging_param', 'gpu_n_jobs_param', 'X_test', 'fix_imbalance', '_available_plots', 'exp_id', 'log_plots_param', 'y', 'seed', 'X', 'USI', 'n_jobs_param', 'memory', 'data', 'exp_name_log', 'gpu_param', '_ml_usecase', 'is_multiclass', 'target_param', 'y_train', 'fold_shuffle_param', 'fold_groups_param', 'X_train', 'idx', 'fold_generator', 'y_test'}
+2024-07-02 05:46:33,025:INFO:Checking environment
+2024-07-02 05:46:33,026:INFO:python_version: 3.10.12
+2024-07-02 05:46:33,026:INFO:python_build: ('main', 'Nov 20 2023 15:14:05')
+2024-07-02 05:46:33,026:INFO:machine: x86_64
+2024-07-02 05:46:33,026:INFO:platform: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 05:46:33,027:INFO:Memory: svmem(total=8191082496, available=6375899136, percent=22.2, used=1485103104, free=987279360, active=1753436160, inactive=4811644928, buffers=132231168, cached=5586468864, shared=929792, slab=507158528)
+2024-07-02 05:46:33,029:INFO:Physical Core: 1
+2024-07-02 05:46:33,030:INFO:Logical Core: 2
+2024-07-02 05:46:33,030:INFO:Checking libraries
+2024-07-02 05:46:33,030:INFO:System:
+2024-07-02 05:46:33,030:INFO:    python: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+2024-07-02 05:46:33,030:INFO:executable: /home/ubuntu/projects/credit-card-fraud/venv/bin/python
+2024-07-02 05:46:33,030:INFO:   machine: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 05:46:33,030:INFO:PyCaret required dependencies:
+2024-07-02 05:46:34,175:INFO:                 pip: 22.0.2
+2024-07-02 05:46:34,175:INFO:          setuptools: 59.6.0
+2024-07-02 05:46:34,175:INFO:             pycaret: 3.3.2
+2024-07-02 05:46:34,175:INFO:             IPython: 8.26.0
+2024-07-02 05:46:34,175:INFO:          ipywidgets: 8.1.3
+2024-07-02 05:46:34,175:INFO:                tqdm: 4.66.4
+2024-07-02 05:46:34,176:INFO:               numpy: 1.26.4
+2024-07-02 05:46:34,176:INFO:              pandas: 2.1.4
+2024-07-02 05:46:34,176:INFO:              jinja2: 3.1.4
+2024-07-02 05:46:34,176:INFO:               scipy: 1.11.4
+2024-07-02 05:46:34,176:INFO:              joblib: 1.3.2
+2024-07-02 05:46:34,176:INFO:             sklearn: 1.4.2
+2024-07-02 05:46:34,176:INFO:                pyod: 2.0.1
+2024-07-02 05:46:34,176:INFO:            imblearn: 0.12.3
+2024-07-02 05:46:34,176:INFO:   category_encoders: 2.6.3
+2024-07-02 05:46:34,176:INFO:            lightgbm: 4.4.0
+2024-07-02 05:46:34,176:INFO:               numba: 0.60.0
+2024-07-02 05:46:34,176:INFO:            requests: 2.32.3
+2024-07-02 05:46:34,176:INFO:          matplotlib: 3.7.5
+2024-07-02 05:46:34,176:INFO:          scikitplot: 0.3.7
+2024-07-02 05:46:34,176:INFO:         yellowbrick: 1.5
+2024-07-02 05:46:34,176:INFO:              plotly: 5.22.0
+2024-07-02 05:46:34,176:INFO:    plotly-resampler: Not installed
+2024-07-02 05:46:34,176:INFO:             kaleido: 0.2.1
+2024-07-02 05:46:34,177:INFO:           schemdraw: 0.15
+2024-07-02 05:46:34,177:INFO:         statsmodels: 0.14.2
+2024-07-02 05:46:34,177:INFO:              sktime: 0.26.0
+2024-07-02 05:46:34,177:INFO:               tbats: 1.1.3
+2024-07-02 05:46:34,177:INFO:            pmdarima: 2.0.4
+2024-07-02 05:46:34,177:INFO:              psutil: 6.0.0
+2024-07-02 05:46:34,177:INFO:          markupsafe: 2.1.5
+2024-07-02 05:46:34,177:INFO:             pickle5: Not installed
+2024-07-02 05:46:34,177:INFO:         cloudpickle: 3.0.0
+2024-07-02 05:46:34,178:INFO:         deprecation: 2.1.0
+2024-07-02 05:46:34,179:INFO:              xxhash: 3.4.1
+2024-07-02 05:46:34,179:INFO:           wurlitzer: 3.1.1
+2024-07-02 05:46:34,179:INFO:PyCaret optional dependencies:
+2024-07-02 05:46:37,213:INFO:                shap: 0.44.1
+2024-07-02 05:46:37,213:INFO:           interpret: 0.6.2
+2024-07-02 05:46:37,213:INFO:                umap: 0.5.6
+2024-07-02 05:46:37,213:INFO:     ydata_profiling: 4.8.3
+2024-07-02 05:46:37,213:INFO:  explainerdashboard: 0.4.7
+2024-07-02 05:46:37,213:INFO:             autoviz: Not installed
+2024-07-02 05:46:37,214:INFO:           fairlearn: 0.7.0
+2024-07-02 05:46:37,214:INFO:          deepchecks: Not installed
+2024-07-02 05:46:37,214:INFO:             xgboost: 2.1.0
+2024-07-02 05:46:37,214:INFO:            catboost: 1.2.5
+2024-07-02 05:46:37,214:INFO:              kmodes: 0.12.2
+2024-07-02 05:46:37,214:INFO:             mlxtend: 0.23.1
+2024-07-02 05:46:37,214:INFO:       statsforecast: 1.5.0
+2024-07-02 05:46:37,214:INFO:        tune_sklearn: 0.5.0
+2024-07-02 05:46:37,214:INFO:                 ray: 2.31.0
+2024-07-02 05:46:37,215:INFO:            hyperopt: 0.2.7
+2024-07-02 05:46:37,215:INFO:              optuna: 3.6.1
+2024-07-02 05:46:37,215:INFO:               skopt: 0.10.2
+2024-07-02 05:46:37,215:INFO:              mlflow: 2.14.1
+2024-07-02 05:46:37,215:INFO:              gradio: 4.37.2
+2024-07-02 05:46:37,215:INFO:             fastapi: 0.111.0
+2024-07-02 05:46:37,215:INFO:             uvicorn: 0.30.1
+2024-07-02 05:46:37,215:INFO:              m2cgen: 0.10.0
+2024-07-02 05:46:37,215:INFO:           evidently: 0.4.30
+2024-07-02 05:46:37,215:INFO:               fugue: 0.8.7
+2024-07-02 05:46:37,215:INFO:           streamlit: Not installed
+2024-07-02 05:46:37,215:INFO:             prophet: Not installed
+2024-07-02 05:46:37,215:INFO:None
+2024-07-02 05:46:37,215:INFO:Set up data.
+2024-07-02 05:47:34,978:INFO:PyCaret ClassificationExperiment
+2024-07-02 05:47:34,978:INFO:Logging name: clf-default-name
+2024-07-02 05:47:34,979:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-07-02 05:47:34,979:INFO:version 3.3.2
+2024-07-02 05:47:34,979:INFO:Initializing setup()
+2024-07-02 05:47:34,979:INFO:self.USI: b0a3
+2024-07-02 05:47:34,979:INFO:self._variable_keys: {'pipeline', 'html_param', 'logging_param', 'gpu_n_jobs_param', 'X_test', 'fix_imbalance', '_available_plots', 'exp_id', 'log_plots_param', 'y', 'seed', 'X', 'USI', 'n_jobs_param', 'memory', 'data', 'exp_name_log', 'gpu_param', '_ml_usecase', 'is_multiclass', 'target_param', 'y_train', 'fold_shuffle_param', 'fold_groups_param', 'X_train', 'idx', 'fold_generator', 'y_test'}
+2024-07-02 05:47:34,979:INFO:Checking environment
+2024-07-02 05:47:34,980:INFO:python_version: 3.10.12
+2024-07-02 05:47:34,980:INFO:python_build: ('main', 'Nov 20 2023 15:14:05')
+2024-07-02 05:47:34,980:INFO:machine: x86_64
+2024-07-02 05:47:34,980:INFO:platform: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 05:47:34,981:INFO:Memory: svmem(total=8191082496, available=6340952064, percent=22.6, used=1520050176, free=950861824, active=1803223040, inactive=4812685312, buffers=132304896, cached=5587865600, shared=929792, slab=507285504)
+2024-07-02 05:47:34,981:INFO:Physical Core: 1
+2024-07-02 05:47:34,981:INFO:Logical Core: 2
+2024-07-02 05:47:34,981:INFO:Checking libraries
+2024-07-02 05:47:34,981:INFO:System:
+2024-07-02 05:47:34,981:INFO:    python: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+2024-07-02 05:47:34,981:INFO:executable: /home/ubuntu/projects/credit-card-fraud/venv/bin/python
+2024-07-02 05:47:34,981:INFO:   machine: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 05:47:34,982:INFO:PyCaret required dependencies:
+2024-07-02 05:47:34,982:INFO:                 pip: 22.0.2
+2024-07-02 05:47:34,982:INFO:          setuptools: 59.6.0
+2024-07-02 05:47:34,982:INFO:             pycaret: 3.3.2
+2024-07-02 05:47:34,982:INFO:             IPython: 8.26.0
+2024-07-02 05:47:34,982:INFO:          ipywidgets: 8.1.3
+2024-07-02 05:47:34,982:INFO:                tqdm: 4.66.4
+2024-07-02 05:47:34,982:INFO:               numpy: 1.26.4
+2024-07-02 05:47:34,982:INFO:              pandas: 2.1.4
+2024-07-02 05:47:34,982:INFO:              jinja2: 3.1.4
+2024-07-02 05:47:34,982:INFO:               scipy: 1.11.4
+2024-07-02 05:47:34,982:INFO:              joblib: 1.3.2
+2024-07-02 05:47:34,982:INFO:             sklearn: 1.4.2
+2024-07-02 05:47:34,982:INFO:                pyod: 2.0.1
+2024-07-02 05:47:34,982:INFO:            imblearn: 0.12.3
+2024-07-02 05:47:34,982:INFO:   category_encoders: 2.6.3
+2024-07-02 05:47:34,982:INFO:            lightgbm: 4.4.0
+2024-07-02 05:47:34,982:INFO:               numba: 0.60.0
+2024-07-02 05:47:34,983:INFO:            requests: 2.32.3
+2024-07-02 05:47:34,983:INFO:          matplotlib: 3.7.5
+2024-07-02 05:47:34,983:INFO:          scikitplot: 0.3.7
+2024-07-02 05:47:34,983:INFO:         yellowbrick: 1.5
+2024-07-02 05:47:34,983:INFO:              plotly: 5.22.0
+2024-07-02 05:47:34,983:INFO:    plotly-resampler: Not installed
+2024-07-02 05:47:34,983:INFO:             kaleido: 0.2.1
+2024-07-02 05:47:34,983:INFO:           schemdraw: 0.15
+2024-07-02 05:47:34,983:INFO:         statsmodels: 0.14.2
+2024-07-02 05:47:34,983:INFO:              sktime: 0.26.0
+2024-07-02 05:47:34,983:INFO:               tbats: 1.1.3
+2024-07-02 05:47:34,983:INFO:            pmdarima: 2.0.4
+2024-07-02 05:47:34,983:INFO:              psutil: 6.0.0
+2024-07-02 05:47:34,984:INFO:          markupsafe: 2.1.5
+2024-07-02 05:47:34,984:INFO:             pickle5: Not installed
+2024-07-02 05:47:34,984:INFO:         cloudpickle: 3.0.0
+2024-07-02 05:47:34,984:INFO:         deprecation: 2.1.0
+2024-07-02 05:47:34,984:INFO:              xxhash: 3.4.1
+2024-07-02 05:47:34,984:INFO:           wurlitzer: 3.1.1
+2024-07-02 05:47:34,984:INFO:PyCaret optional dependencies:
+2024-07-02 05:47:34,984:INFO:                shap: 0.44.1
+2024-07-02 05:47:34,984:INFO:           interpret: 0.6.2
+2024-07-02 05:47:34,985:INFO:                umap: 0.5.6
+2024-07-02 05:47:34,985:INFO:     ydata_profiling: 4.8.3
+2024-07-02 05:47:34,985:INFO:  explainerdashboard: 0.4.7
+2024-07-02 05:47:34,985:INFO:             autoviz: Not installed
+2024-07-02 05:47:34,985:INFO:           fairlearn: 0.7.0
+2024-07-02 05:47:34,985:INFO:          deepchecks: Not installed
+2024-07-02 05:47:34,985:INFO:             xgboost: 2.1.0
+2024-07-02 05:47:34,985:INFO:            catboost: 1.2.5
+2024-07-02 05:47:34,985:INFO:              kmodes: 0.12.2
+2024-07-02 05:47:34,986:INFO:             mlxtend: 0.23.1
+2024-07-02 05:47:34,992:INFO:       statsforecast: 1.5.0
+2024-07-02 05:47:34,992:INFO:        tune_sklearn: 0.5.0
+2024-07-02 05:47:34,992:INFO:                 ray: 2.31.0
+2024-07-02 05:47:34,992:INFO:            hyperopt: 0.2.7
+2024-07-02 05:47:34,992:INFO:              optuna: 3.6.1
+2024-07-02 05:47:34,992:INFO:               skopt: 0.10.2
+2024-07-02 05:47:34,992:INFO:              mlflow: 2.14.1
+2024-07-02 05:47:34,992:INFO:              gradio: 4.37.2
+2024-07-02 05:47:34,993:INFO:             fastapi: 0.111.0
+2024-07-02 05:47:34,993:INFO:             uvicorn: 0.30.1
+2024-07-02 05:47:34,993:INFO:              m2cgen: 0.10.0
+2024-07-02 05:47:34,993:INFO:           evidently: 0.4.30
+2024-07-02 05:47:34,993:INFO:               fugue: 0.8.7
+2024-07-02 05:47:34,993:INFO:           streamlit: Not installed
+2024-07-02 05:47:34,993:INFO:             prophet: Not installed
+2024-07-02 05:47:34,993:INFO:None
+2024-07-02 05:47:34,993:INFO:Set up data.
+2024-07-02 05:48:16,414:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 05:48:16,414:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 05:48:16,414:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 05:48:16,415:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 05:50:34,117:INFO:PyCaret ClassificationExperiment
+2024-07-02 05:50:34,118:INFO:Logging name: clf-default-name
+2024-07-02 05:50:34,118:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-07-02 05:50:34,119:INFO:version 3.3.2
+2024-07-02 05:50:34,119:INFO:Initializing setup()
+2024-07-02 05:50:34,119:INFO:self.USI: cde3
+2024-07-02 05:50:34,119:INFO:self._variable_keys: {'idx', '_available_plots', 'y_test', 'y_train', 'fold_groups_param', 'exp_id', 'data', 'is_multiclass', 'X', 'fold_generator', 'y', 'X_train', 'USI', 'memory', '_ml_usecase', 'n_jobs_param', 'pipeline', 'log_plots_param', 'X_test', 'exp_name_log', 'gpu_param', 'gpu_n_jobs_param', 'seed', 'fold_shuffle_param', 'logging_param', 'fix_imbalance', 'html_param', 'target_param'}
+2024-07-02 05:50:34,119:INFO:Checking environment
+2024-07-02 05:50:34,119:INFO:python_version: 3.10.12
+2024-07-02 05:50:34,120:INFO:python_build: ('main', 'Nov 20 2023 15:14:05')
+2024-07-02 05:50:34,120:INFO:machine: x86_64
+2024-07-02 05:50:34,121:INFO:platform: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 05:50:34,121:INFO:Memory: svmem(total=8191082496, available=6118592512, percent=25.3, used=1742446592, free=690921472, active=2025168896, inactive=4848644096, buffers=133541888, cached=5624172544, shared=929792, slab=508694528)
+2024-07-02 05:50:34,122:INFO:Physical Core: 1
+2024-07-02 05:50:34,122:INFO:Logical Core: 2
+2024-07-02 05:50:34,122:INFO:Checking libraries
+2024-07-02 05:50:34,122:INFO:System:
+2024-07-02 05:50:34,122:INFO:    python: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+2024-07-02 05:50:34,122:INFO:executable: /home/ubuntu/projects/credit-card-fraud/venv/bin/python
+2024-07-02 05:50:34,122:INFO:   machine: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 05:50:34,122:INFO:PyCaret required dependencies:
+2024-07-02 05:50:35,039:INFO:                 pip: 22.0.2
+2024-07-02 05:50:35,039:INFO:          setuptools: 59.6.0
+2024-07-02 05:50:35,039:INFO:             pycaret: 3.3.2
+2024-07-02 05:50:35,039:INFO:             IPython: 8.26.0
+2024-07-02 05:50:35,039:INFO:          ipywidgets: 8.1.3
+2024-07-02 05:50:35,039:INFO:                tqdm: 4.66.4
+2024-07-02 05:50:35,039:INFO:               numpy: 1.26.4
+2024-07-02 05:50:35,039:INFO:              pandas: 2.1.4
+2024-07-02 05:50:35,039:INFO:              jinja2: 3.1.4
+2024-07-02 05:50:35,039:INFO:               scipy: 1.11.4
+2024-07-02 05:50:35,039:INFO:              joblib: 1.3.2
+2024-07-02 05:50:35,039:INFO:             sklearn: 1.4.2
+2024-07-02 05:50:35,039:INFO:                pyod: 2.0.1
+2024-07-02 05:50:35,039:INFO:            imblearn: 0.12.3
+2024-07-02 05:50:35,039:INFO:   category_encoders: 2.6.3
+2024-07-02 05:50:35,039:INFO:            lightgbm: 4.4.0
+2024-07-02 05:50:35,040:INFO:               numba: 0.60.0
+2024-07-02 05:50:35,040:INFO:            requests: 2.32.3
+2024-07-02 05:50:35,040:INFO:          matplotlib: 3.7.5
+2024-07-02 05:50:35,040:INFO:          scikitplot: 0.3.7
+2024-07-02 05:50:35,040:INFO:         yellowbrick: 1.5
+2024-07-02 05:50:35,040:INFO:              plotly: 5.22.0
+2024-07-02 05:50:35,040:INFO:    plotly-resampler: Not installed
+2024-07-02 05:50:35,040:INFO:             kaleido: 0.2.1
+2024-07-02 05:50:35,040:INFO:           schemdraw: 0.15
+2024-07-02 05:50:35,040:INFO:         statsmodels: 0.14.2
+2024-07-02 05:50:35,040:INFO:              sktime: 0.26.0
+2024-07-02 05:50:35,040:INFO:               tbats: 1.1.3
+2024-07-02 05:50:35,040:INFO:            pmdarima: 2.0.4
+2024-07-02 05:50:35,040:INFO:              psutil: 6.0.0
+2024-07-02 05:50:35,040:INFO:          markupsafe: 2.1.5
+2024-07-02 05:50:35,040:INFO:             pickle5: Not installed
+2024-07-02 05:50:35,040:INFO:         cloudpickle: 3.0.0
+2024-07-02 05:50:35,040:INFO:         deprecation: 2.1.0
+2024-07-02 05:50:35,040:INFO:              xxhash: 3.4.1
+2024-07-02 05:50:35,040:INFO:           wurlitzer: 3.1.1
+2024-07-02 05:50:35,040:INFO:PyCaret optional dependencies:
+2024-07-02 05:50:37,482:INFO:                shap: 0.44.1
+2024-07-02 05:50:37,482:INFO:           interpret: 0.6.2
+2024-07-02 05:50:37,482:INFO:                umap: 0.5.6
+2024-07-02 05:50:37,482:INFO:     ydata_profiling: 4.8.3
+2024-07-02 05:50:37,482:INFO:  explainerdashboard: 0.4.7
+2024-07-02 05:50:37,482:INFO:             autoviz: Not installed
+2024-07-02 05:50:37,482:INFO:           fairlearn: 0.7.0
+2024-07-02 05:50:37,482:INFO:          deepchecks: Not installed
+2024-07-02 05:50:37,482:INFO:             xgboost: 2.1.0
+2024-07-02 05:50:37,482:INFO:            catboost: 1.2.5
+2024-07-02 05:50:37,482:INFO:              kmodes: 0.12.2
+2024-07-02 05:50:37,482:INFO:             mlxtend: 0.23.1
+2024-07-02 05:50:37,482:INFO:       statsforecast: 1.5.0
+2024-07-02 05:50:37,482:INFO:        tune_sklearn: 0.5.0
+2024-07-02 05:50:37,483:INFO:                 ray: 2.31.0
+2024-07-02 05:50:37,483:INFO:            hyperopt: 0.2.7
+2024-07-02 05:50:37,483:INFO:              optuna: 3.6.1
+2024-07-02 05:50:37,483:INFO:               skopt: 0.10.2
+2024-07-02 05:50:37,483:INFO:              mlflow: 2.14.1
+2024-07-02 05:50:37,483:INFO:              gradio: 4.37.2
+2024-07-02 05:50:37,483:INFO:             fastapi: 0.111.0
+2024-07-02 05:50:37,483:INFO:             uvicorn: 0.30.1
+2024-07-02 05:50:37,483:INFO:              m2cgen: 0.10.0
+2024-07-02 05:50:37,483:INFO:           evidently: 0.4.30
+2024-07-02 05:50:37,483:INFO:               fugue: 0.8.7
+2024-07-02 05:50:37,483:INFO:           streamlit: Not installed
+2024-07-02 05:50:37,483:INFO:             prophet: Not installed
+2024-07-02 05:50:37,483:INFO:None
+2024-07-02 05:50:37,483:INFO:Set up data.
+2024-07-02 05:50:39,094:INFO:Set up folding strategy.
+2024-07-02 05:50:39,095:INFO:Set up train/test split.
+2024-07-02 05:50:39,657:INFO:Set up index.
+2024-07-02 05:50:39,680:INFO:Assigning column types.
+2024-07-02 05:50:39,795:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-07-02 05:50:39,858:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-07-02 05:50:39,862:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 05:50:39,902:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 05:50:39,905:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 05:50:40,001:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-07-02 05:50:40,003:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 05:50:40,053:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 05:50:40,058:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 05:50:40,059:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-07-02 05:50:40,125:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 05:50:40,158:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 05:50:40,162:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 05:50:40,214:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 05:50:40,244:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 05:50:40,246:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 05:50:40,247:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-07-02 05:50:40,321:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 05:50:40,324:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 05:50:40,405:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 05:50:40,409:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 05:50:40,412:INFO:Preparing preprocessing pipeline...
+2024-07-02 05:50:40,430:INFO:Set up simple imputation.
+2024-07-02 05:50:40,531:INFO:Set up encoding of ordinal features.
+2024-07-02 05:50:40,560:INFO:Set up encoding of categorical features.
+2024-07-02 05:50:45,695:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:249: UserWarning: Persisting input arguments took 0.73s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2024-07-02 05:50:48,228:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:256: UserWarning: Persisting input arguments took 0.83s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2024-07-02 05:50:51,539:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:256: UserWarning: Persisting input arguments took 0.85s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2024-07-02 05:50:53,479:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:249: UserWarning: Persisting input arguments took 0.89s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_transformer = self._memory_fit(
+
+2024-07-02 05:50:56,231:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:256: UserWarning: Persisting input arguments took 0.83s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_transform(
+
+2024-07-02 05:51:02,989:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:278: UserWarning: Persisting input arguments took 2.19s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_estimator = self._memory_fit(
+
+2024-07-02 05:51:03,017:INFO:Finished creating preprocessing pipeline.
+2024-07-02 05:51:03,050:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['cc_num', 'amt', 'zip', 'lat',
+                                             'long', 'city_pop', 'unix_time',
+                                             'merch_lat', 'merch_long'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical...
+                                             'merchant', 'first', 'last',
+                                             'street', 'city', 'state', 'job',
+                                             'dob', 'trans_num'],
+                                    transformer=TargetEncoder(cols=['trans_date_trans_time',
+                                                                    'merchant',
+                                                                    'first',
+                                                                    'last',
+                                                                    'street',
+                                                                    'city',
+                                                                    'state',
+                                                                    'job',
+                                                                    'dob',
+                                                                    'trans_num'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              hierarchy=None,
+                                                              min_samples_leaf=20,
+                                                              return_df=True,
+                                                              smoothing=10,
+                                                              verbose=0)))],
+         verbose=False)
+2024-07-02 05:51:03,051:INFO:Creating final display dataframe.
+2024-07-02 05:51:08,699:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:111: UserWarning: Persisting input arguments took 0.50s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2024-07-02 05:51:14,148:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:111: UserWarning: Persisting input arguments took 1.97s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2024-07-02 05:51:16,192:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:289: UserWarning: Persisting input arguments took 1.95s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_full_transform(
+
+2024-07-02 05:51:21,211:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:111: UserWarning: Persisting input arguments took 0.94s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2024-07-02 05:51:27,897:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:111: UserWarning: Persisting input arguments took 1.96s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2024-07-02 05:51:29,969:WARNING:/home/ubuntu/projects/credit-card-fraud/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:289: UserWarning: Persisting input arguments took 2.03s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_full_transform(
+
+2024-07-02 05:51:34,553:INFO:Setup _display_container:                     Description             Value
+0                    Session id              3719
+1                        Target          is_fraud
+2                   Target type            Binary
+3           Original data shape      (344517, 22)
+4        Transformed data shape      (344517, 35)
+5   Transformed train set shape      (241161, 35)
+6    Transformed test set shape      (103356, 35)
+7              Numeric features                 9
+8          Categorical features                12
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15               Fold Generator   StratifiedKFold
+16                  Fold Number                10
+17                     CPU Jobs                -1
+18                      Use GPU             False
+19               Log Experiment             False
+20              Experiment Name  clf-default-name
+21                          USI              cde3
+2024-07-02 05:51:34,649:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 05:51:34,652:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 05:51:34,733:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 05:51:34,736:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 05:51:34,739:INFO:setup() successfully completed in 60.62s...............
+2024-07-02 10:59:56,699:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 10:59:56,699:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 10:59:56,700:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 10:59:56,700:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:04:38,234:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:04:38,234:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:04:38,234:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:04:38,235:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:17:46,209:INFO:PyCaret ClassificationExperiment
+2024-07-02 11:17:46,209:INFO:Logging name: mlops-pipeline
+2024-07-02 11:17:46,209:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-07-02 11:17:46,209:INFO:version 3.3.2
+2024-07-02 11:17:46,209:INFO:Initializing setup()
+2024-07-02 11:17:46,209:INFO:self.USI: 7c5a
+2024-07-02 11:17:46,209:INFO:self._variable_keys: {'X_train', 'memory', 'USI', 'gpu_param', 'fix_imbalance', 'data', 'exp_name_log', 'X', 'X_test', 'target_param', 'is_multiclass', 'y', 'seed', '_available_plots', 'logging_param', '_ml_usecase', 'html_param', 'log_plots_param', 'pipeline', 'gpu_n_jobs_param', 'fold_generator', 'fold_shuffle_param', 'fold_groups_param', 'y_test', 'idx', 'y_train', 'n_jobs_param', 'exp_id'}
+2024-07-02 11:17:46,210:INFO:Checking environment
+2024-07-02 11:17:46,210:INFO:python_version: 3.10.12
+2024-07-02 11:17:46,210:INFO:python_build: ('main', 'Nov 20 2023 15:14:05')
+2024-07-02 11:17:46,210:INFO:machine: x86_64
+2024-07-02 11:17:46,210:INFO:platform: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 11:17:46,210:INFO:Memory: svmem(total=8191082496, available=6187663360, percent=24.5, used=1673392128, free=1267859456, active=2052431872, inactive=4274499584, buffers=159821824, cached=5090009088, shared=925696, slab=475258880)
+2024-07-02 11:17:46,212:INFO:Physical Core: 1
+2024-07-02 11:17:46,212:INFO:Logical Core: 2
+2024-07-02 11:17:46,213:INFO:Checking libraries
+2024-07-02 11:17:46,213:INFO:System:
+2024-07-02 11:17:46,213:INFO:    python: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+2024-07-02 11:17:46,213:INFO:executable: /home/ubuntu/projects/credit-card-fraud/venv/bin/python
+2024-07-02 11:17:46,213:INFO:   machine: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 11:17:46,213:INFO:PyCaret required dependencies:
+2024-07-02 11:17:47,356:INFO:                 pip: 22.0.2
+2024-07-02 11:17:47,356:INFO:          setuptools: 70.2.0
+2024-07-02 11:17:47,357:INFO:             pycaret: 3.3.2
+2024-07-02 11:17:47,358:INFO:             IPython: 8.26.0
+2024-07-02 11:17:47,358:INFO:          ipywidgets: 8.1.3
+2024-07-02 11:17:47,358:INFO:                tqdm: 4.66.4
+2024-07-02 11:17:47,358:INFO:               numpy: 1.26.4
+2024-07-02 11:17:47,358:INFO:              pandas: 2.1.4
+2024-07-02 11:17:47,359:INFO:              jinja2: 3.1.4
+2024-07-02 11:17:47,359:INFO:               scipy: 1.11.4
+2024-07-02 11:17:47,359:INFO:              joblib: 1.3.2
+2024-07-02 11:17:47,360:INFO:             sklearn: 1.4.2
+2024-07-02 11:17:47,360:INFO:                pyod: 2.0.1
+2024-07-02 11:17:47,360:INFO:            imblearn: 0.12.3
+2024-07-02 11:17:47,360:INFO:   category_encoders: 2.6.3
+2024-07-02 11:17:47,361:INFO:            lightgbm: 4.4.0
+2024-07-02 11:17:47,361:INFO:               numba: 0.60.0
+2024-07-02 11:17:47,362:INFO:            requests: 2.32.3
+2024-07-02 11:17:47,362:INFO:          matplotlib: 3.7.5
+2024-07-02 11:17:47,363:INFO:          scikitplot: 0.3.7
+2024-07-02 11:17:47,363:INFO:         yellowbrick: 1.5
+2024-07-02 11:17:47,363:INFO:              plotly: 5.22.0
+2024-07-02 11:17:47,364:INFO:    plotly-resampler: Not installed
+2024-07-02 11:17:47,364:INFO:             kaleido: 0.2.1
+2024-07-02 11:17:47,364:INFO:           schemdraw: 0.15
+2024-07-02 11:17:47,365:INFO:         statsmodels: 0.14.2
+2024-07-02 11:17:47,365:INFO:              sktime: 0.26.0
+2024-07-02 11:17:47,366:INFO:               tbats: 1.1.3
+2024-07-02 11:17:47,366:INFO:            pmdarima: 2.0.4
+2024-07-02 11:17:47,366:INFO:              psutil: 6.0.0
+2024-07-02 11:17:47,366:INFO:          markupsafe: 2.1.5
+2024-07-02 11:17:47,366:INFO:             pickle5: Not installed
+2024-07-02 11:17:47,366:INFO:         cloudpickle: 3.0.0
+2024-07-02 11:17:47,366:INFO:         deprecation: 2.1.0
+2024-07-02 11:17:47,367:INFO:              xxhash: 3.4.1
+2024-07-02 11:17:47,367:INFO:           wurlitzer: 3.1.1
+2024-07-02 11:17:47,367:INFO:PyCaret optional dependencies:
+2024-07-02 11:17:50,732:INFO:                shap: 0.44.1
+2024-07-02 11:17:50,732:INFO:           interpret: 0.6.2
+2024-07-02 11:17:50,732:INFO:                umap: 0.5.6
+2024-07-02 11:17:50,733:INFO:     ydata_profiling: 4.8.3
+2024-07-02 11:17:50,733:INFO:  explainerdashboard: 0.4.7
+2024-07-02 11:17:50,733:INFO:             autoviz: Not installed
+2024-07-02 11:17:50,733:INFO:           fairlearn: 0.7.0
+2024-07-02 11:17:50,733:INFO:          deepchecks: Not installed
+2024-07-02 11:17:50,733:INFO:             xgboost: 2.1.0
+2024-07-02 11:17:50,733:INFO:            catboost: 1.2.5
+2024-07-02 11:17:50,733:INFO:              kmodes: 0.12.2
+2024-07-02 11:17:50,733:INFO:             mlxtend: 0.23.1
+2024-07-02 11:17:50,733:INFO:       statsforecast: 1.5.0
+2024-07-02 11:17:50,733:INFO:        tune_sklearn: 0.5.0
+2024-07-02 11:17:50,734:INFO:                 ray: 2.31.0
+2024-07-02 11:17:50,734:INFO:            hyperopt: 0.2.7
+2024-07-02 11:17:50,734:INFO:              optuna: 3.6.1
+2024-07-02 11:17:50,734:INFO:               skopt: 0.10.2
+2024-07-02 11:17:50,734:INFO:              mlflow: 2.14.1
+2024-07-02 11:17:50,734:INFO:              gradio: 4.37.2
+2024-07-02 11:17:50,734:INFO:             fastapi: 0.111.0
+2024-07-02 11:17:50,734:INFO:             uvicorn: 0.30.1
+2024-07-02 11:17:50,734:INFO:              m2cgen: 0.10.0
+2024-07-02 11:17:50,734:INFO:           evidently: 0.4.30
+2024-07-02 11:17:50,734:INFO:               fugue: 0.8.7
+2024-07-02 11:17:50,735:INFO:           streamlit: Not installed
+2024-07-02 11:17:50,735:INFO:             prophet: Not installed
+2024-07-02 11:17:50,735:INFO:None
+2024-07-02 11:17:50,735:INFO:Set up data.
+2024-07-02 11:17:52,685:INFO:Set up folding strategy.
+2024-07-02 11:17:52,685:INFO:Set up train/test split.
+2024-07-02 11:17:53,193:INFO:Set up index.
+2024-07-02 11:17:53,205:INFO:Assigning column types.
+2024-07-02 11:17:53,248:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-07-02 11:17:53,296:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-07-02 11:17:53,300:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 11:17:53,338:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:17:53,342:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:17:53,429:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-07-02 11:17:53,431:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 11:17:53,489:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:17:53,497:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:17:53,500:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-07-02 11:17:53,588:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 11:17:53,621:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:17:53,625:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:17:53,681:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 11:17:53,715:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:17:53,718:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:17:53,719:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-07-02 11:17:53,809:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:17:53,812:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:17:53,913:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:17:53,918:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:17:53,920:INFO:Preparing preprocessing pipeline...
+2024-07-02 11:17:53,936:INFO:Set up date feature engineering.
+2024-07-02 11:17:53,936:INFO:Set up iterative imputation.
+2024-07-02 11:17:53,936:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-07-02 11:17:53,950:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-07-02 11:17:53,957:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-07-02 11:17:54,212:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-07-02 11:17:54,269:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:17:54,272:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:17:54,388:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:17:54,394:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:17:54,640:INFO:Set up encoding of ordinal features.
+2024-07-02 11:17:54,673:INFO:Set up encoding of categorical features.
+2024-07-02 11:17:54,674:INFO:Set up removing multicollinearity.
+2024-07-02 11:17:54,674:INFO:Set up removing outliers.
+2024-07-02 11:17:54,674:INFO:Set up imbalanced handling.
+2024-07-02 11:17:54,674:INFO:Set up feature normalization.
+2024-07-02 11:17:54,674:INFO:Set up feature selection.
+2024-07-02 11:17:54,774:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:17:54,776:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:24:24,636:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:24:24,636:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:24:24,636:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:24:24,636:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:57:07,949:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:57:07,949:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:57:07,949:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:57:07,949:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-07-02 11:58:48,428:INFO:PyCaret ClassificationExperiment
+2024-07-02 11:58:48,428:INFO:Logging name: mlops-pipeline
+2024-07-02 11:58:48,428:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-07-02 11:58:48,428:INFO:version 3.3.2
+2024-07-02 11:58:48,429:INFO:Initializing setup()
+2024-07-02 11:58:48,429:INFO:self.USI: 4f1f
+2024-07-02 11:58:48,429:INFO:self._variable_keys: {'memory', 'idx', 'html_param', 'data', 'fix_imbalance', 'seed', 'fold_shuffle_param', 'n_jobs_param', 'logging_param', '_available_plots', 'fold_groups_param', 'exp_id', 'X_train', 'USI', 'y_test', 'log_plots_param', 'exp_name_log', 'y', 'gpu_n_jobs_param', '_ml_usecase', 'is_multiclass', 'pipeline', 'y_train', 'target_param', 'fold_generator', 'X_test', 'X', 'gpu_param'}
+2024-07-02 11:58:48,430:INFO:Checking environment
+2024-07-02 11:58:48,430:INFO:python_version: 3.10.12
+2024-07-02 11:58:48,430:INFO:python_build: ('main', 'Nov 20 2023 15:14:05')
+2024-07-02 11:58:48,430:INFO:machine: x86_64
+2024-07-02 11:58:48,430:INFO:platform: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 11:58:48,430:INFO:Memory: svmem(total=8191082496, available=6116667392, percent=25.3, used=1744388096, free=1183084544, active=2104877056, inactive=4286529536, buffers=161808384, cached=5101801472, shared=925696, slab=475344896)
+2024-07-02 11:58:48,431:INFO:Physical Core: 1
+2024-07-02 11:58:48,432:INFO:Logical Core: 2
+2024-07-02 11:58:48,432:INFO:Checking libraries
+2024-07-02 11:58:48,432:INFO:System:
+2024-07-02 11:58:48,432:INFO:    python: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+2024-07-02 11:58:48,432:INFO:executable: /home/ubuntu/projects/credit-card-fraud/venv/bin/python
+2024-07-02 11:58:48,433:INFO:   machine: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 11:58:48,433:INFO:PyCaret required dependencies:
+2024-07-02 11:58:49,346:INFO:                 pip: 22.0.2
+2024-07-02 11:58:49,347:INFO:          setuptools: 70.2.0
+2024-07-02 11:58:49,347:INFO:             pycaret: 3.3.2
+2024-07-02 11:58:49,347:INFO:             IPython: 8.26.0
+2024-07-02 11:58:49,347:INFO:          ipywidgets: 8.1.3
+2024-07-02 11:58:49,347:INFO:                tqdm: 4.66.4
+2024-07-02 11:58:49,347:INFO:               numpy: 1.26.4
+2024-07-02 11:58:49,347:INFO:              pandas: 2.1.4
+2024-07-02 11:58:49,347:INFO:              jinja2: 3.1.4
+2024-07-02 11:58:49,347:INFO:               scipy: 1.11.4
+2024-07-02 11:58:49,347:INFO:              joblib: 1.3.2
+2024-07-02 11:58:49,347:INFO:             sklearn: 1.4.2
+2024-07-02 11:58:49,347:INFO:                pyod: 2.0.1
+2024-07-02 11:58:49,347:INFO:            imblearn: 0.12.3
+2024-07-02 11:58:49,347:INFO:   category_encoders: 2.6.3
+2024-07-02 11:58:49,347:INFO:            lightgbm: 4.4.0
+2024-07-02 11:58:49,347:INFO:               numba: 0.60.0
+2024-07-02 11:58:49,347:INFO:            requests: 2.32.3
+2024-07-02 11:58:49,347:INFO:          matplotlib: 3.7.5
+2024-07-02 11:58:49,347:INFO:          scikitplot: 0.3.7
+2024-07-02 11:58:49,347:INFO:         yellowbrick: 1.5
+2024-07-02 11:58:49,347:INFO:              plotly: 5.22.0
+2024-07-02 11:58:49,347:INFO:    plotly-resampler: Not installed
+2024-07-02 11:58:49,347:INFO:             kaleido: 0.2.1
+2024-07-02 11:58:49,347:INFO:           schemdraw: 0.15
+2024-07-02 11:58:49,347:INFO:         statsmodels: 0.14.2
+2024-07-02 11:58:49,348:INFO:              sktime: 0.26.0
+2024-07-02 11:58:49,348:INFO:               tbats: 1.1.3
+2024-07-02 11:58:49,348:INFO:            pmdarima: 2.0.4
+2024-07-02 11:58:49,348:INFO:              psutil: 6.0.0
+2024-07-02 11:58:49,348:INFO:          markupsafe: 2.1.5
+2024-07-02 11:58:49,348:INFO:             pickle5: Not installed
+2024-07-02 11:58:49,348:INFO:         cloudpickle: 3.0.0
+2024-07-02 11:58:49,348:INFO:         deprecation: 2.1.0
+2024-07-02 11:58:49,348:INFO:              xxhash: 3.4.1
+2024-07-02 11:58:49,348:INFO:           wurlitzer: 3.1.1
+2024-07-02 11:58:49,348:INFO:PyCaret optional dependencies:
+2024-07-02 11:58:52,020:INFO:                shap: 0.44.1
+2024-07-02 11:58:52,020:INFO:           interpret: 0.6.2
+2024-07-02 11:58:52,020:INFO:                umap: 0.5.6
+2024-07-02 11:58:52,020:INFO:     ydata_profiling: 4.8.3
+2024-07-02 11:58:52,020:INFO:  explainerdashboard: 0.4.7
+2024-07-02 11:58:52,020:INFO:             autoviz: Not installed
+2024-07-02 11:58:52,020:INFO:           fairlearn: 0.7.0
+2024-07-02 11:58:52,020:INFO:          deepchecks: Not installed
+2024-07-02 11:58:52,020:INFO:             xgboost: 2.1.0
+2024-07-02 11:58:52,020:INFO:            catboost: 1.2.5
+2024-07-02 11:58:52,020:INFO:              kmodes: 0.12.2
+2024-07-02 11:58:52,021:INFO:             mlxtend: 0.23.1
+2024-07-02 11:58:52,021:INFO:       statsforecast: 1.5.0
+2024-07-02 11:58:52,021:INFO:        tune_sklearn: 0.5.0
+2024-07-02 11:58:52,021:INFO:                 ray: 2.31.0
+2024-07-02 11:58:52,021:INFO:            hyperopt: 0.2.7
+2024-07-02 11:58:52,021:INFO:              optuna: 3.6.1
+2024-07-02 11:58:52,021:INFO:               skopt: 0.10.2
+2024-07-02 11:58:52,021:INFO:              mlflow: 2.14.1
+2024-07-02 11:58:52,021:INFO:              gradio: 4.37.2
+2024-07-02 11:58:52,021:INFO:             fastapi: 0.111.0
+2024-07-02 11:58:52,021:INFO:             uvicorn: 0.30.1
+2024-07-02 11:58:52,021:INFO:              m2cgen: 0.10.0
+2024-07-02 11:58:52,021:INFO:           evidently: 0.4.30
+2024-07-02 11:58:52,021:INFO:               fugue: 0.8.7
+2024-07-02 11:58:52,021:INFO:           streamlit: Not installed
+2024-07-02 11:58:52,021:INFO:             prophet: Not installed
+2024-07-02 11:58:52,021:INFO:None
+2024-07-02 11:58:52,021:INFO:Set up data.
+2024-07-02 11:58:54,290:INFO:Set up folding strategy.
+2024-07-02 11:58:54,295:INFO:Set up train/test split.
+2024-07-02 11:58:54,897:INFO:Set up index.
+2024-07-02 11:58:54,918:INFO:Assigning column types.
+2024-07-02 11:58:54,989:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-07-02 11:58:55,066:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-07-02 11:58:55,071:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 11:58:55,111:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:58:55,115:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:58:55,178:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-07-02 11:58:55,179:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 11:58:55,213:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:58:55,216:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:58:55,217:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-07-02 11:58:55,265:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 11:58:55,294:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:58:55,298:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:58:55,348:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 11:58:55,376:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:58:55,379:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:58:55,380:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-07-02 11:58:55,464:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:58:55,468:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:58:55,549:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:58:55,552:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:58:55,555:INFO:Preparing preprocessing pipeline...
+2024-07-02 11:58:55,565:INFO:Set up date feature engineering.
+2024-07-02 11:58:55,565:INFO:Set up iterative imputation.
+2024-07-02 11:58:55,565:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-07-02 11:58:55,572:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-07-02 11:58:55,576:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-07-02 11:58:55,762:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-07-02 11:58:55,819:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:58:55,828:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:58:55,905:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:58:55,908:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 11:58:56,078:INFO:Set up encoding of ordinal features.
+2024-07-02 11:58:56,102:INFO:Set up encoding of categorical features.
+2024-07-02 11:58:56,102:INFO:Set up removing multicollinearity.
+2024-07-02 11:58:56,103:INFO:Set up removing outliers.
+2024-07-02 11:58:56,103:INFO:Set up imbalanced handling.
+2024-07-02 11:58:56,103:INFO:Set up feature normalization.
+2024-07-02 11:58:56,103:INFO:Set up feature selection.
+2024-07-02 11:58:56,195:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 11:58:56,198:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:21,029:INFO:PyCaret ClassificationExperiment
+2024-07-02 12:02:21,030:INFO:Logging name: mlops-pipeline
+2024-07-02 12:02:21,030:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-07-02 12:02:21,031:INFO:version 3.3.2
+2024-07-02 12:02:21,031:INFO:Initializing setup()
+2024-07-02 12:02:21,032:INFO:self.USI: 1b31
+2024-07-02 12:02:21,032:INFO:self._variable_keys: {'memory', 'idx', 'html_param', 'data', 'fix_imbalance', 'seed', 'fold_shuffle_param', 'n_jobs_param', 'logging_param', '_available_plots', 'fold_groups_param', 'exp_id', 'X_train', 'USI', 'y_test', 'log_plots_param', 'exp_name_log', 'y', 'gpu_n_jobs_param', '_ml_usecase', 'is_multiclass', 'pipeline', 'y_train', 'target_param', 'fold_generator', 'X_test', 'X', 'gpu_param'}
+2024-07-02 12:02:21,033:INFO:Checking environment
+2024-07-02 12:02:21,033:INFO:python_version: 3.10.12
+2024-07-02 12:02:21,033:INFO:python_build: ('main', 'Nov 20 2023 15:14:05')
+2024-07-02 12:02:21,033:INFO:machine: x86_64
+2024-07-02 12:02:21,033:INFO:platform: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 12:02:21,034:INFO:Memory: svmem(total=8191082496, available=5992280064, percent=26.8, used=1868775424, free=1058086912, active=2239705088, inactive=4287025152, buffers=162156544, cached=5102063616, shared=925696, slab=475504640)
+2024-07-02 12:02:21,034:INFO:Physical Core: 1
+2024-07-02 12:02:21,035:INFO:Logical Core: 2
+2024-07-02 12:02:21,035:INFO:Checking libraries
+2024-07-02 12:02:21,035:INFO:System:
+2024-07-02 12:02:21,041:INFO:    python: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+2024-07-02 12:02:21,044:INFO:executable: /home/ubuntu/projects/credit-card-fraud/venv/bin/python
+2024-07-02 12:02:21,045:INFO:   machine: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+2024-07-02 12:02:21,046:INFO:PyCaret required dependencies:
+2024-07-02 12:02:21,047:INFO:                 pip: 22.0.2
+2024-07-02 12:02:21,047:INFO:          setuptools: 70.2.0
+2024-07-02 12:02:21,048:INFO:             pycaret: 3.3.2
+2024-07-02 12:02:21,048:INFO:             IPython: 8.26.0
+2024-07-02 12:02:21,048:INFO:          ipywidgets: 8.1.3
+2024-07-02 12:02:21,048:INFO:                tqdm: 4.66.4
+2024-07-02 12:02:21,049:INFO:               numpy: 1.26.4
+2024-07-02 12:02:21,049:INFO:              pandas: 2.1.4
+2024-07-02 12:02:21,049:INFO:              jinja2: 3.1.4
+2024-07-02 12:02:21,050:INFO:               scipy: 1.11.4
+2024-07-02 12:02:21,051:INFO:              joblib: 1.3.2
+2024-07-02 12:02:21,052:INFO:             sklearn: 1.4.2
+2024-07-02 12:02:21,052:INFO:                pyod: 2.0.1
+2024-07-02 12:02:21,053:INFO:            imblearn: 0.12.3
+2024-07-02 12:02:21,053:INFO:   category_encoders: 2.6.3
+2024-07-02 12:02:21,054:INFO:            lightgbm: 4.4.0
+2024-07-02 12:02:21,067:INFO:               numba: 0.60.0
+2024-07-02 12:02:21,067:INFO:            requests: 2.32.3
+2024-07-02 12:02:21,067:INFO:          matplotlib: 3.7.5
+2024-07-02 12:02:21,068:INFO:          scikitplot: 0.3.7
+2024-07-02 12:02:21,068:INFO:         yellowbrick: 1.5
+2024-07-02 12:02:21,068:INFO:              plotly: 5.22.0
+2024-07-02 12:02:21,068:INFO:    plotly-resampler: Not installed
+2024-07-02 12:02:21,068:INFO:             kaleido: 0.2.1
+2024-07-02 12:02:21,068:INFO:           schemdraw: 0.15
+2024-07-02 12:02:21,069:INFO:         statsmodels: 0.14.2
+2024-07-02 12:02:21,069:INFO:              sktime: 0.26.0
+2024-07-02 12:02:21,069:INFO:               tbats: 1.1.3
+2024-07-02 12:02:21,069:INFO:            pmdarima: 2.0.4
+2024-07-02 12:02:21,069:INFO:              psutil: 6.0.0
+2024-07-02 12:02:21,070:INFO:          markupsafe: 2.1.5
+2024-07-02 12:02:21,072:INFO:             pickle5: Not installed
+2024-07-02 12:02:21,072:INFO:         cloudpickle: 3.0.0
+2024-07-02 12:02:21,072:INFO:         deprecation: 2.1.0
+2024-07-02 12:02:21,072:INFO:              xxhash: 3.4.1
+2024-07-02 12:02:21,072:INFO:           wurlitzer: 3.1.1
+2024-07-02 12:02:21,072:INFO:PyCaret optional dependencies:
+2024-07-02 12:02:21,072:INFO:                shap: 0.44.1
+2024-07-02 12:02:21,073:INFO:           interpret: 0.6.2
+2024-07-02 12:02:21,073:INFO:                umap: 0.5.6
+2024-07-02 12:02:21,073:INFO:     ydata_profiling: 4.8.3
+2024-07-02 12:02:21,073:INFO:  explainerdashboard: 0.4.7
+2024-07-02 12:02:21,073:INFO:             autoviz: Not installed
+2024-07-02 12:02:21,073:INFO:           fairlearn: 0.7.0
+2024-07-02 12:02:21,073:INFO:          deepchecks: Not installed
+2024-07-02 12:02:21,074:INFO:             xgboost: 2.1.0
+2024-07-02 12:02:21,074:INFO:            catboost: 1.2.5
+2024-07-02 12:02:21,074:INFO:              kmodes: 0.12.2
+2024-07-02 12:02:21,074:INFO:             mlxtend: 0.23.1
+2024-07-02 12:02:21,074:INFO:       statsforecast: 1.5.0
+2024-07-02 12:02:21,074:INFO:        tune_sklearn: 0.5.0
+2024-07-02 12:02:21,074:INFO:                 ray: 2.31.0
+2024-07-02 12:02:21,075:INFO:            hyperopt: 0.2.7
+2024-07-02 12:02:21,075:INFO:              optuna: 3.6.1
+2024-07-02 12:02:21,075:INFO:               skopt: 0.10.2
+2024-07-02 12:02:21,075:INFO:              mlflow: 2.14.1
+2024-07-02 12:02:21,076:INFO:              gradio: 4.37.2
+2024-07-02 12:02:21,076:INFO:             fastapi: 0.111.0
+2024-07-02 12:02:21,076:INFO:             uvicorn: 0.30.1
+2024-07-02 12:02:21,076:INFO:              m2cgen: 0.10.0
+2024-07-02 12:02:21,076:INFO:           evidently: 0.4.30
+2024-07-02 12:02:21,076:INFO:               fugue: 0.8.7
+2024-07-02 12:02:21,076:INFO:           streamlit: Not installed
+2024-07-02 12:02:21,077:INFO:             prophet: Not installed
+2024-07-02 12:02:21,077:INFO:None
+2024-07-02 12:02:21,077:INFO:Set up data.
+2024-07-02 12:02:23,363:INFO:Set up folding strategy.
+2024-07-02 12:02:23,364:INFO:Set up train/test split.
+2024-07-02 12:02:23,844:INFO:Set up index.
+2024-07-02 12:02:23,856:INFO:Assigning column types.
+2024-07-02 12:02:23,902:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-07-02 12:02:23,941:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-07-02 12:02:23,942:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 12:02:23,967:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:23,970:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:24,011:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-07-02 12:02:24,012:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 12:02:24,038:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:24,041:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:24,042:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-07-02 12:02:24,082:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 12:02:24,107:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:24,110:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:24,153:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-07-02 12:02:24,180:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:24,183:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:24,184:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-07-02 12:02:24,262:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:24,266:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:24,348:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:24,352:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:24,358:INFO:Preparing preprocessing pipeline...
+2024-07-02 12:02:24,370:INFO:Set up date feature engineering.
+2024-07-02 12:02:24,370:INFO:Set up iterative imputation.
+2024-07-02 12:02:24,371:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-07-02 12:02:24,378:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-07-02 12:02:24,385:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-07-02 12:02:24,524:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-07-02 12:02:24,564:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:24,567:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:24,633:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:24,636:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:24,833:INFO:Set up encoding of ordinal features.
+2024-07-02 12:02:24,861:INFO:Set up encoding of categorical features.
+2024-07-02 12:02:24,862:INFO:Set up removing multicollinearity.
+2024-07-02 12:02:24,862:INFO:Set up removing outliers.
+2024-07-02 12:02:24,862:INFO:Set up imbalanced handling.
+2024-07-02 12:02:24,862:INFO:Set up feature normalization.
+2024-07-02 12:02:24,862:INFO:Set up feature selection.
+2024-07-02 12:02:24,936:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:24,939:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:45,152:INFO:Finished creating preprocessing pipeline.
+2024-07-02 12:02:45,258:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['trans_date', 'dob'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('iterative_imputer',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=IterativeImputer(add_indicator=False,
+                                                                 cat_estimator=LGBMCla...
+                                                                                         learning_rate=0.1,
+                                                                                         max_depth=-1,
+                                                                                         min_child_samples=20,
+                                                                                         min_child_weight=0.001,
+                                                                                         min_split_gain=0.0,
+                                                                                         n_estimators=100,
+                                                                                         n_jobs=None,
+                                                                                         num_leaves=31,
+                                                                                         objective=None,
+                                                                                         random_state=None,
+                                                                                         reg_alpha=0.0,
+                                                                                         reg_lambda=0.0,
+                                                                                         subsample=1.0,
+                                                                                         subsample_for_bin=200000,
+                                                                                         subsample_freq=0),
+                                                                importance_getter='auto',
+                                                                max_features=2,
+                                                                norm_order=1,
+                                                                prefit=False,
+                                                                threshold=-inf)))],
+         verbose=False)
+2024-07-02 12:02:45,258:INFO:Creating final display dataframe.
+2024-07-02 12:02:54,630:INFO:Setup _display_container:                         Description            Value
+0                        Session id             7189
+1                            Target         is_fraud
+2                       Target type           Binary
+3               Original data shape     (344517, 20)
+4            Transformed data shape      (621954, 3)
+5       Transformed train set shape      (587502, 3)
+6        Transformed test set shape       (34452, 3)
+7                   Ignore features               10
+8                  Ordinal features                2
+9                  Numeric features                2
+10                    Date features                2
+11             Categorical features                4
+12                       Preprocess             True
+13                  Imputation type        iterative
+14  Iterative imputation iterations               10
+15        Numeric iterative imputer         lightgbm
+16    Categorical iterative imputer         lightgbm
+17         Maximum one-hot encoding               25
+18                  Encoding method             None
+19         Remove multicollinearity             True
+20      Multicollinearity threshold              0.9
+21                  Remove outliers             True
+22               Outliers threshold             0.05
+23                    Fix imbalance             True
+24             Fix imbalance method            SMOTE
+25                        Normalize             True
+26                 Normalize method           zscore
+27                Feature selection             True
+28         Feature selection method          classic
+29      Feature selection estimator         lightgbm
+30      Number of features selected              0.2
+31                   Fold Generator  StratifiedKFold
+32                      Fold Number               10
+33                         CPU Jobs               -1
+34                          Use GPU            False
+35                   Log Experiment     MlflowLogger
+36                  Experiment Name   mlops-pipeline
+37                              USI             1b31
+2024-07-02 12:02:54,734:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:54,737:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:54,821:INFO:Soft dependency imported: xgboost: 2.1.0
+2024-07-02 12:02:54,826:INFO:Soft dependency imported: catboost: 1.2.5
+2024-07-02 12:02:54,828:INFO:Logging experiment in loggers
+2024-07-02 12:02:55,000:INFO:SubProcess save_model() called ==================================
+2024-07-02 12:02:55,208:INFO:Initializing save_model()
+2024-07-02 12:02:55,208:INFO:save_model(model=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['trans_date', 'dob'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('iterative_imputer',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=IterativeImputer(add_indicator=False,
+                                                                 cat_estimator=LGBMCla...
+                                                                                         learning_rate=0.1,
+                                                                                         max_depth=-1,
+                                                                                         min_child_samples=20,
+                                                                                         min_child_weight=0.001,
+                                                                                         min_split_gain=0.0,
+                                                                                         n_estimators=100,
+                                                                                         n_jobs=None,
+                                                                                         num_leaves=31,
+                                                                                         objective=None,
+                                                                                         random_state=None,
+                                                                                         reg_alpha=0.0,
+                                                                                         reg_lambda=0.0,
+                                                                                         subsample=1.0,
+                                                                                         subsample_for_bin=200000,
+                                                                                         subsample_freq=0),
+                                                                importance_getter='auto',
+                                                                max_features=2,
+                                                                norm_order=1,
+                                                                prefit=False,
+                                                                threshold=-inf)))],
+         verbose=False), model_name=/tmp/tmpu6blbxy4/Transformation Pipeline, prep_pipe_=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['trans_date', 'dob'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('iterative_imputer',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=IterativeImputer(add_indicator=False,
+                                                                 cat_estimator=LGBMCla...
+                                                                                         learning_rate=0.1,
+                                                                                         max_depth=-1,
+                                                                                         min_child_samples=20,
+                                                                                         min_child_weight=0.001,
+                                                                                         min_split_gain=0.0,
+                                                                                         n_estimators=100,
+                                                                                         n_jobs=None,
+                                                                                         num_leaves=31,
+                                                                                         objective=None,
+                                                                                         random_state=None,
+                                                                                         reg_alpha=0.0,
+                                                                                         reg_lambda=0.0,
+                                                                                         subsample=1.0,
+                                                                                         subsample_for_bin=200000,
+                                                                                         subsample_freq=0),
+                                                                importance_getter='auto',
+                                                                max_features=2,
+                                                                norm_order=1,
+                                                                prefit=False,
+                                                                threshold=-inf)))],
+         verbose=False), verbose=False, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2024-07-02 12:02:55,208:INFO:Adding model into prep_pipe
+2024-07-02 12:02:55,208:WARNING:Only Model saved as it was a pipeline.
+2024-07-02 12:02:55,321:INFO:/tmp/tmpu6blbxy4/Transformation Pipeline.pkl saved in current working directory
+2024-07-02 12:02:55,387:INFO:Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['trans_date', 'dob'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('iterative_imputer',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=IterativeImputer(add_indicator=False,
+                                                                 cat_estimator=LGBMCla...
+                                                                                         learning_rate=0.1,
+                                                                                         max_depth=-1,
+                                                                                         min_child_samples=20,
+                                                                                         min_child_weight=0.001,
+                                                                                         min_split_gain=0.0,
+                                                                                         n_estimators=100,
+                                                                                         n_jobs=None,
+                                                                                         num_leaves=31,
+                                                                                         objective=None,
+                                                                                         random_state=None,
+                                                                                         reg_alpha=0.0,
+                                                                                         reg_lambda=0.0,
+                                                                                         subsample=1.0,
+                                                                                         subsample_for_bin=200000,
+                                                                                         subsample_freq=0),
+                                                                importance_getter='auto',
+                                                                max_features=2,
+                                                                norm_order=1,
+                                                                prefit=False,
+                                                                threshold=-inf)))],
+         verbose=False)
+2024-07-02 12:02:55,387:INFO:save_model() successfully completed......................................
+2024-07-02 12:02:55,626:INFO:SubProcess save_model() end ==================================
+2024-07-02 12:02:58,708:INFO:setup() successfully completed in 33.8s...............

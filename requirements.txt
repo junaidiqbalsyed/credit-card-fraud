@@ -1,2 +1,5 @@
-pycaret
+pycaret[full]
 pandas
+geopy 
+pygeohash 
+mlflow

@@ -1,0 +1,6 @@
+artifact_location: file:///home/ubuntu/projects/credit-card-fraud/mlruns/318242459975068357
+creation_time: 1719917263668
+experiment_id: '318242459975068357'
+last_update_time: 1719917263668
+lifecycle_stage: active
+name: mlops-pipeline
